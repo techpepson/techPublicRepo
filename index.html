@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/svg+xml0" href="/vite.svg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home - Ankin Apparel</title>
+    </head>
+    <body
+        class="bg-gradient-to-b from-slate-600 to-green-50">
+        <!--The containing div that contains all the elements-->
+        <div class="container pl-20">
+            <!--Padding that gives a space in the document-->
+            <!--Header Section-->
+                <header class="header__section"> <div class="upper__items flex justify-between">
+                    <div class="name__container flex flex-col">
+                        <span class="main-name text-3xl font-normal select-none text-green-950">Ankin Apparel</span>
+                        <span class="font-light text-green-950">Your favorite Taylors</span>
+                    </div>
+                    <!--The navs container-->
+                    <div
+                        class="navs rounded-full mt-3">
+                        <!--The ul of navs-->
+                        <ul class="nav__items flex text-center gap-5 font-medium hover:cursor-pointer pt-1">
+                            <a href="menPage.html">
+                                <li class="navs__menu active:opacity-25 active:transition-opacity active:text-red-300 bg-green-50 rounded-lg hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="men-nav">
+                                    Men
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="navs__menu active:opacity-25 active:transition-opacity bg-green-50 rounded-lg hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="women-nav">
+                                    Women
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="navs__menu active:opacity-25 active:transition-opacity active:text-red-300 bg-green-50 rounded-lg hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="children-nav">
+                                    Children
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="navs__menu active:opacity-25 active:transition-opacity bg-green-50 rounded-lg hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="about-nav">
+                                    About
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="navs__menu active:opacity-25 active:transition-opacity active:text-red-300 bg-green-50 rounded-lg hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none animate-bounce" id="contact-nav">
+                                    Contact
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="navs__menu active:opacity-25 active:transition-opacity active:text-red-300 bg-green-50 rounded-lg hover:animate-bounce hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="services-nav">
+                                    Other Services
+                                </li>
+                            </a>
+                            <!--The line that separates the header nav and the sun icon-->
+                            <p class="w-[2px] h-7 block bg-slate-400"></p>
+                            <li>
+                                <!--Sun icon from heroicons-->
+                                <button id="sun-icons" class="sun-icon lg:w-5 lg:h-5 lg:mt-1 lg:block active:opacity-25 active:transition-opacity duration-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <!--End of ul for navs-->
+                    </div>
+                    <!--Mobile nav container-->
+                    <div
+                        class="mobile-nav__container absolute hidden lg:hidden w-full h-full justify-center items-center bg-[#1c1917]">
+                        <!--Mobile nav as ul here-->
+                        <nav class="mobile-nav flex justify-center items-center">
+                            <ul class="mobile-nav__ul flex flex-col gap-5 font-medium hover:cursor-pointer pt-1">
+                                <a class="mobile-nav__link" href="#">
+                                    <li class="mobile-nav__button navs__menu menu text-sm active:opacity-25 active:transition-opacity text-center active:text-red-300
+                                       bg-green-50 rounded-lg hover:animate-bounce
+                                       hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="home-nav">
+                                        Home
+                                    </li>
+                                </a>
+                                <a class="mobile-nav__link" href="menPage.html">
+                                    <li class="mobile-nav__button navs__menu menu text-sm active:opacity-25 active:transition-opacity text-center active:text-red-300
+                                       bg-green-50 rounded-lg hover:translate-x-2
+                                       hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="men-nav">
+                                        Men
+                                    </li>
+                                </a>
+                                <a class="mobile-nav__link" href="#">
+                                    <li class="mobile-nav__button navs__menu text-sm active:opacity-25 active:transition-opacity text-center bg-green-50 rounded-lg
+                                      hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="women-nav">
+                                       Women
+                                    </li>
+                                </a>
+                                <a class="mobile-nav__link" href="#">
+                                    <li class="mobile-nav__button navs__menu text-sm active:opacity-25 active:transition-opacity text-center active:text-red-300
+                                                            bg-green-50 rounded-lg hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="children-nav">
+                                        Children
+                                    </li>
+                                </a>
+                                <a class="mobile-nav__link" href="#">
+                                    <li class="mobile-nav__button navs__menu menu active:opacity-25 active:transition-opacity text-center bg-green-50 rounded-lg hover:translate-x-2
+                                                            hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="about-nav">
+                                        About
+                                    </li>
+                                </a>
+                                <a class="mobile-nav__link" href="#">
+                                    <li class="mobile-nav__button navs__menu menu text-sm active:opacity-25 active:transition-opacity text-center active:text-red-300 bg-green-50
+                                                            rounded-lg hover:translate-x-2 hover:text-red-400 hover:transition-colors duration-[0.5s] select-none animate-bounce" id="contact-nav">
+                                        Contact
+                                    </li>
+                                </a>
+                                <a class="mobile-nav__link" href="#">
+                                    <li class="mobile-nav__button navs__menu menu text-sm active:opacity-25 active:transition-opacity text-center active:text-red-300 bg-green-50
+                                                            rounded-lg hover:animate-bounce hover:text-red-400 hover:transition-colors duration-[0.5s] select-none" id="services-nav">
+                                        Other Services
+                                    </li>
+                                </a>
+                                <!--Line that separates the sun and mobile navs buttons-->
+                                <p class="w-12 h-[2px] flex ml-5 bg-slate-400"></p>
+                                <li
+                                    class="mobile-nav__sun-button">
+                                    <!--Sun icon from heroicons for mobile nav-->
+                                    <button id="sun-icons" class="mobile-nav__sun ml-9 w-5 h-5 mt-1 block active:opacity-25 active:transition-opacity duration-100 text-blue-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--End of mobile nav-->
+                    <div
+                        class="navigation-icons flex">
+                        <!--Bars icon which displays from a min-width of 640px-->
+                        <button class="bars-icon relative w-6 h-5 mt-3 text-black active:opacity-25 active:transition-opacity duration-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+                <!--Main body of the home page-->
+                <div class="main-content__container mt-5">
+                    <main class="main-home">
+                        <!--A containing div that contains all the body of the home page-->
+                        <!--Background image contained here-->
+                            <div class="main-home__content bg-[url('/pics/background.jpg')] bg-no-repeat h-96 bg-cover lg:rounded-bl-[50px]"> <div class="main-home__container">
+                                <p class="main-home__jargon sm:font-extralight animate-pulse sm:text-slate-800 sm:select-none sm:text-4xl lg:5xl 2xl:text-6xl">
+                                    FASHION HOME
+                                </p>
+                                <p class="w-28 animate-pulse mt-1 h-1 bg-slate-800"></p>
+                            </div>
+                            <!--A container for the welcome messages displayed as flex-->
+                            <div class="welcome-message__container flex justify-between mt-14 align-baseline">
+                                <section class="main-home__body-text max-w-[50ch] text-slate-800 font-light max-sm:font-normal select-none sm:text-lg lg:text-xl 2xl:text-3xl">
+                                    Welcome to Ankin Apparel
+                                    <strong>where all your needs in fashion</strong>
+                                    are met to your
+                                    satisfaction.
+                                    <em>Take some time to explore us.</em>
+                                </section>
+                                <!--Akwaaba message made a link-->
+                                <a href="#contact-nav" class="cursor-auto select-text no-underline">
+                                    <p class="welcome-message animate-move-right text-slate-800 shadow-2xl font-normal sm:text-5xl lg:text-7xl 2xl:text-8xl max-sm:animate-none">
+                                        AKWAABA! &#x1F44B;
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="bottom-container mt-20 flex justify-between bg-gradient-to-t from-slate-400 to-slate-700 lg:rounded-tr-[50px]">
+                            <!--Images of the social media platforms-->
+                            <div class="icons sm:w-20 sm:h-20">
+                                <picture
+                                    class="icons-pictures">
+                                    <!--Social media links-->
+                                    <a href="#" class="no-underline"><img class="socials-image sm:w-10 sm:h-16" src="/pics/icons/twitter.png"/></a>
+                                    <a href="#" class="no-underline"><img class="socials-image sm:w-10 sm:h-16" src="/pics/icons/facebook.png"/></a>
+                                    <a href="https://wa.me/+233551875432" class="no-underline"><img class="socials-image sm:w-10 sm:h-16" src="/pics/icons/xap-icon.png"/></a>
+                                </picture>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-600 to-green-50">
+                                <!--This is an image of one of our works-->
+                                <img class="work-image w-[20vw] h-[50vh] mt-10 pl-20 ml-0 rounded-full select-none" src="pics/bottom-image.jpg" alt="This is an image of one of our works we made for one client"/>
+                            </div>
+                            <!--About us, what we do in brief-->
+                            <div class="portfolio__container max-w-[90ch] mt-28">
+                                <div class="flex">
+                                    <p class="activities__portfolio font-thin sm:text-2xl animate-move-right max-lg:animate-none lg:text-3xl 2xl:text-4xl">
+                                        WHAT WE DO:
+                                    </p>
+                                    <figure>
+                                        <img src="dummy.png" class="w-30 h-10 ml-2"/>
+                                    </figure>
+                                </div>
+                                <hr class=""/>
+                                <p class="activities__text pt-20 font-thin sm:text-xl lg:text-2xl 2xl:text-3xl select-none">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Quisquam explicabo pariatur tenetur perferendis magni ex
+                                    repellendus modi voluptatibus sunt esse consectetur quas eius
+                                    dignissimos nisi animi, sed, adipisci in similique.
+                                </p>
+                            </div>
+                        </div>
+                        <!--Footer section-->
+                        <footer class="footer">
+                            <div class="fieldset flex justify-center mt-5">
+                                <div class="fieldset__container flex mt-4 mb-1 space-x-5 max-lg:text-sm bg-gradient-to-t from-slate-600 to-green-50">
+                                    <p>Contact: 0551875432.</p>
+                                    <p>
+                                        Location: Amasaman Stadium road.
+                                    </p>
+                                    <a href=" https://wa.me/+233551875432"><img src="./pics/icons/xap-icon.png" class="w-7 max-lg:h-10 rounded-full" alt="This is a whatsapp image"></a>
+                                    <span class="bg-gradient-to-t from-slate-600 to-green-50">website: www.ankin.fashion.online</span>
+                                </div>
+                            </div>
+                            <span class="footer-copy flex justify-center"></span>
+                        </footer>
+                    </main>
+                </div>
+            </div>
+            <script type="module" src="./components/main.js"></script>
+        </body>
+    </body>
+</html>

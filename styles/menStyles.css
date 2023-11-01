@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sliding-images {
+    display: flex;
+    overflow: hidden;
+}
+
+.sliding-image{
+    animation: sliding ease-in-out 40s infinite;
+}
+
+.grid-of-styles-container{
+    display: grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    grid-template-areas: 
+    "image1" "text1"
+    "text2" "image2"
+    "image3" "text3"
+    "text4" "image4"
+    "image5" "text5"
+}
+
+.agbada-img{
+    display: grid;
+    grid-area: image1;
+}
+.agbada-description{
+    display: grid;
+    grid-area: text1;
+}
+.kaftan-description{
+    display: grid;
+    grid-area: text2;
+}
+.kaftan-img{
+    display: grid;
+    grid-area: image2;
+}
+.political-img{
+    display: grid;
+    grid-area: image3;
+}
+.political-description caption{
+    display: grid;
+    grid-area: text3;
+}
+.kimono-description{
+    display: grid;
+    grid-area: text4;
+}
+.kimono-img{
+    display: grid;
+    grid-area: image4;
+}
+.v-neck-img{
+    display: grid;
+    grid-area: image5;
+}
+.v-neck-description{
+    display: grid;
+    grid-area: text5;
+}
+/*This is the sliding images section*/
+@keyframes sliding{
+    0%{
+        transform: translateX(0%)
+    }
+    20%{
+        transform:  translateX(-100%)
+    }
+    25%{
+        transform: translateX(-100%)
+    }
+    40%{
+        transform: translateX(-200%)
+    }
+    45%{
+        transform: translateX(-200%)
+    }
+    60%{
+        transform: translateX(-300%)
+    }
+    65%{
+        transform: translateX(-300%)
+    }
+    80%{
+        transform: translateX(-400%)
+    }
+    85%{
+        transform: translateX(-400%)
+    }
+    100%{
+        transform: translateX(-400%)
+    }
+}

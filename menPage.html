@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="m-0 box-border">
+    <div class="container">
+      <!--Header section here-->
+      <header class="header-section">
+        <div class="navs mt-5 rounded-xl ml-10">
+          <ul class="navs flex justify-between place-items-center max-lg:hidden">
+            <a href="#" class="Home-link">
+              <li class="home-button">Home</li>
+            </a>
+            <a href="#" class="About-link">
+              <li class="about-button">About</li>
+            </a>
+            <!--Container for the name of the company-->
+            <div class="name-container">
+              <span
+                class="company-name-button text-5xl text-[#0c4a6e] animate-pulse select-none"
+                >ANKIN APPAREL</span
+              >
+              <p class="company-jargon text-xl italic text-[#0c4a6e] animate-pulse select-none ml-14">Your professional tailors</p>
+            </div>
+            <a href="#" class="ladies-link">
+              <li class="ladies-button">Ladies</li>
+            </a>
+            <a href="#" class="children-link">
+              <li class="children-button">Children</li>
+            </a>
+            <a href="#" class="contact-link">
+              <li class="contact-button">Contact</li>
+            </a>
+            <!--Separating line for the navs-->
+            <p class="bg-[#082f49] w-[2px] h-10"></p>
+            <!--Sun icon section-->
+            <li
+              class="main__sun-icon hover:translate-x-0 bg-white hover:bg-slate-100 place-items-center"
+            >
+              <button
+                id="sun-icons"
+                class="sun-icon active:opacity-25 active:transition-opacity duration-100 lg:w-5 lg:h-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="navigation-icons flex justify-end">
+            <!--Bars icon for a min-width of 640px-->
+            <button
+              class="bars-icon relative w-6 h-5 mt-3 text-black active:opacity-25 active:transition-opacity duration-100 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--Mobile nav section-->
+        <div class="mobile-nav__container max-[380px]:mt-0 mt-8 flex">
+          <ul
+            class="mobile__navs flex items-center justify-center place-items-center flex-col gap-10 min-[360px]:hidden w-full h-full bg-[#e0f2fe] absolute rounded-2xl"
+          >
+            <a href="#" class="mobile__Home-link">
+              <li class="mobile__home-button">Home</li>
+            </a>
+            <a href="#" class="mobile__about-link">
+              <li class="mobile__about-button">About</li>
+            </a>
+            <div class="mobile__name-container">
+              <span
+                class="mobile__company-name-button text-5xl text-[#0c4a6e] animate-pulse select-none"
+                >ANKIN APPAREL</span
+              >
+              <p class="company-jargon text-xl italic text-[#0c4a6e] animate-pulse select-none ml-16">Your professional tailors</p>
+            </div>
+            <a href="#" class="mobile__ladies-link">
+              <li class="mobile__ladies-button">Ladies</li>
+            </a>
+            <a href="#" class="mobile__children-link">
+              <li class="mobile__children-button">Children</li>
+            </a>
+            <a href="#" class="mobile__contact-link">
+              <li class="mobile__contact-button">Contact</li>
+            </a>
+            <!--Separating line for the mobile nav-->
+            <p class="bg-[#082f49] w-16 h-[2px]"></p>
+            <!--Mobile nav sun icon-->
+            <li
+              class="mobile__main-sun-icon hover:translate-x-0  bg-transparent hover:bg-slate-100"
+            >
+              <button
+                id="mobile__sun-icons"
+                class="mobile__sun-icon w-5 lg:h-5 block active:opacity-25 active:transition-opacity duration-100"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!--End of the mobile nav-->
+        <!--End of header section-->
+      </header>
+      <!--Start of the main body-->
+      <main class="main-body">
+        <div class="main-content-container">
+          <p class="explore-message text-7xl max-lg:text-5xl text-[#0c4a6e] font-thin ml-28 select-none ">XPLORE</p>
+          <!--The chevron buttons section here-->
+          <div class="chevron-button-container relative">
+            <button class="chevron-button w-16 absolute top-60 left-12">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+            <button class="chevron-forward-button w-16 absolute left-full top-60">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
+            <!--End of chevron buttons section-->
+          </div>
+          <!--Sliding images container-->
+          <div class="sliding-images-container">
+            <div class="sliding-images flex overflow-hidden h-[600px] ml-28">
+              <img
+                class="sliding-image1 sliding-image"
+                src="./pics/bottom-image.jpg"
+                alt="image of a man in one of our sewn cloths"
+              />
+              <img
+              class="sliding-image2 sliding-image"
+                src="./pics/menPic2.jpg" 
+                alt="image of a man in one of our sewn cloths"
+              />
+              <img
+              class="sliding-image3 sliding-image"
+                src="./pics/menPic3.jpg"
+                alt="image of a man in one of our sewn cloths"
+              />
+              <img
+              class="sliding-image4 sliding-image"
+                src="./pics/menPic1.jpg"
+                alt="image of a man in one of our sewn cloths"
+              />
+              <img
+              class="sliding-image5 sliding-image"
+                src="./pics/menPic5.jpg"
+                alt="image of a man in one of our sewn cloths"
+              />
+            </div>
+          </div>
+          <!--This section contains a grid view of our men styles-->
+          <div class="intro-message-container relative left-24 mt-5 text-blue-900 italic">
+            <p class="intro-message text-3xl">
+              <!--This is an intro of our works-->
+              Find from the large collection of male fashion at Ankin Apparel.
+              Take some time to go through some of what <br> we do at Ankin.
+            </p>
+          </div>
+          <!--This is the grid section of our works-->
+          <div class="grid-of-styles-container">
+            <figure class="agbada-style">
+              <figcaption class="agbada-caption">Agbada Style</figcaption>
+              <img class="agbada-img images" src="./pics/agbada2.jpeg" />
+            </figure>
+            <p class="agbada-description caption">
+              We deal in modern and recent styles of Agbada that will fit you
+              for any occasion, anytime, anywhere.
+            </p>
+            <figure class="kaftan-style">
+              <figcaption class="kaftan-caption">Kaftan Style</figcaption>
+              <img class="kaftan-img images" src="./pics/kaftan.jpeg" />
+            </figure>
+            <p class="kaftan-description caption">
+              We deal in modern and recent styles of Kaftan that will fit you
+              for any occasion, anytime, anywhere.
+            </p>
+            <figure class="political-style">
+              <figcaption class="political-caption">Political Suit</figcaption>
+              <img class="political-img images" src="./pics/political.jpeg" />
+            </figure>
+            <p class="political-description caption">
+              We deal in modern and recent styles of Political Suits that will
+              fit you for any occasion, anytime, anywhere.
+            </p>
+            <figure class="kimono-style">
+              <figcaption class="kimono-caption">Kimono Style</figcaption>
+              <img class="kimono-img images" src="./pics/agbada2.jpeg" />
+            </figure>
+            <p class="kimono-description caption">
+              We deal in modern and recent styles of Kimono that will fit you
+              for any occasion, anytime, anywhere.
+            </p>
+            <figure class="shirt-style">
+              <figcaption class="shirt-caption">Shirt</figcaption>
+              <img class="shirt-img images" src="./pics/agbada2.jpeg" />
+            </figure>
+            <p class="agbada-description caption">
+              We deal in modern and recent styles of Shirts that will fit you
+              for any occasion, anytime, anywhere.
+            </p>
+            <figure class="v-neck-style">
+              <figcaption class="v-neck-caption">V-neck</figcaption>
+              <img class="v-neck-img images" src="./pics/agbada2.jpeg" />
+            </figure>
+            <p class="v-neck-description caption">
+              We deal in modern and recent styles of V-neck that will fit you
+              for any occasion, anytime, anywhere.
+            </p>
+            <!--End of grid view of works-->
+          </div>
+          <div class="concluding-container">
+            <p class="concluding-message">
+              We also take orders for any styles of your choice and get it
+              delivered to the comfort of your home. Just give us a call.
+            </p>
+          </div>
+          <!--This is the button to send emails using mailto-->
+          <div class="message-button">
+            <p class="email">Click the button below to send us an email.</p>
+            <a href="mailto:peprahdickson187@gmail.com">
+              <button class="email">Send email</button>
+            </a>
+          </div>
+        </div>
+        <!--End of main body-->
+      </main>
+      <!--This is the footer section-->
+      <footer class="footer-section">
+        <div class="footer-details-container">
+          <fieldset class="fieldset">
+            <details>
+              <summary class="summary">Contact Us</summary>
+              <a
+                href="mailto:peprahdickson187@gmail.com"
+                title="click to send email"
+                >Email</a
+              >
+              <p class="phone-number">Phone Number: 0551875432</p>
+            </details>
+            <address class="address">
+              <p class="Location">
+                Location: Amasaman(Delivery countrywide is available)
+              </p>
+            </address>
+            <a href="#">
+              <img class="whatsup-img" src="./pics/icons/xap-icon.png" />
+              <span>0551875432</span>
+            </a>
+            <a href="#">
+              <img class="facebook-img" src="./pics/icons/facebook.png" />
+              <span>Ankin Apparel</span>
+            </a>
+            <a href="#">
+              <img class="linkedin-img" src="./pics/icons/facebook.png" />
+              <span>Ankin Apparel</span>
+            </a>
+          </fieldset>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./components/mainMen.js"></script>
+  </body>
+</html>

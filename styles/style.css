@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --clr-dark: #1c1917;
+    --clr-light-blue: #93c5fd;
+    --clr-darkMode: color-mix(in srgb, rgb(29, 31, 29), black);
+}
+
+.darkMode{
+    --clr-light-blue: #1c1917;
+    --clr-light-dark: #93c5fd;
+    --clr-darkMode: color-mix(in srgb, rgb(29, 31, 29), black);
+}
+
+
+@media(min-width: 360px){
+    .navs{
+        display: none;
+    }
+    .main-home__jargon{
+        font-size: 1.5rem;
+    }
+    .welcome-message{
+        font-size: 2rem;
+    }
+    .main-home__body-text{
+        font-size: 1.2rem;
+    }
+    .icons{
+        width: 10rem;
+        height: 5rem;
+    
+    }
+    .socials-image{
+        padding-bottom: 1em;
+    }
+}
+
+/* @keyframes sliding{
+    0%{
+        transform: translateX(0%)
+    }
+    100%{
+        transform:  translateX(100%)
+    } */
+    /* 25%{
+        transform: translateX(-100%)
+    }
+    40%{
+        transform: translateX(-200%)
+    }
+    45%{
+        transform: translateX(-200%)
+    }
+    60%{
+        transform: translateX(-300%)
+    }
+    65%{
+        transform: translateX(-300%)
+    }
+    80%{
+        transform: translateX(-400%)
+    }
+    85%{
+        transform: translateX(-400%)
+    }
+    100%{
+        transform: translateX(-400%)
+    } */
+
+
+@media(min-width: 640px){
+    .navs{
+        display: none;
+    }
+    .bars-icon{
+        display: block;
+    }
+    .work-image{
+        visibility: hidden;
+    }
+}
+
+@media(min-width: 768px){
+
+}
+@media(min-width: 1024px){
+    .navs{
+        display: block;
+    }
+    .bars-icon{
+        display: none;
+    }
+    .work-image{
+        visibility:hidden;
+    }
+}
+@media(min-width: 1280px){
+    .work-image{
+        visibility:visible;
+    }
+}
+
+/* @media(min-width: 1536px){
+
+} */
