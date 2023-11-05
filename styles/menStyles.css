@@ -3,95 +3,116 @@
 @tailwind utilities;
 
 .sliding-images {
-    display: flex;
-    overflow: hidden;
+  display: flex;
+  overflow: hidden;
 }
 
-.sliding-image{
-    animation: sliding ease-in-out 40s infinite;
+.sliding-image {
+  animation: sliding ease-in-out 40s infinite;
 }
-
 .grid-of-styles-container{
+    margin-top: 3rem;
+    margin-left: 7rem;
     display: grid;
-    grid-template-columns:repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
     grid-template-areas: 
-    "image1" "text1"
-    "text2" "image2"
-    "image3" "text3"
-    "text4" "image4"
-    "image5" "text5"
+    "image1 text1"
+    "text2 image2"
+    "image3 text3"
+    "text4 image4"
+    "image5 text5"
+    "text6 image6";
 }
 
-.agbada-img{
-    display: grid;
+.agbada-style{
     grid-area: image1;
 }
+
 .agbada-description{
-    display: grid;
     grid-area: text1;
+    max-width: 30ch;
 }
-.kaftan-description{
-    display: grid;
-    grid-area: text2;
-}
-.kaftan-img{
-    display: grid;
+
+.kaftan-style{
     grid-area: image2;
 }
-.political-img{
-    display: grid;
+
+.kaftan-description{
+    grid-area: text2;
+    max-width: 30ch;
+}
+
+.political-style{
     grid-area: image3;
 }
-.political-description caption{
-    display: grid;
+
+.political-description{
     grid-area: text3;
+    max-width: 30ch;
 }
-.kimono-description{
-    display: grid;
-    grid-area: text4;
-}
-.kimono-img{
-    display: grid;
+
+.kimono-style{
     grid-area: image4;
 }
-.v-neck-img{
-    display: grid;
+
+.kimono-description{
+    grid-area: text4;
+    max-width: 30ch;
+}
+
+.shirt-style{
     grid-area: image5;
 }
-.v-neck-description{
-    display: grid;
+
+.shirt-description{
     grid-area: text5;
+    max-width: 30ch;
 }
+
+.v-neck-style{
+    grid-area: image6;
+}
+
+.v-neck-description {
+    grid-area: text6;
+    max-width: 30ch;
+}
+
+.caption{
+    position: relative;
+    top: 50%;
+}
+
 /*This is the sliding images section*/
-@keyframes sliding{
-    0%{
-        transform: translateX(0%)
-    }
-    20%{
-        transform:  translateX(-100%)
-    }
-    25%{
-        transform: translateX(-100%)
-    }
-    40%{
-        transform: translateX(-200%)
-    }
-    45%{
-        transform: translateX(-200%)
-    }
-    60%{
-        transform: translateX(-300%)
-    }
-    65%{
-        transform: translateX(-300%)
-    }
-    80%{
-        transform: translateX(-400%)
-    }
-    85%{
-        transform: translateX(-400%)
-    }
-    100%{
-        transform: translateX(-400%)
-    }
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  45% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  65% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-400%);
+  }
+  85% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
 }
