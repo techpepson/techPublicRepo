@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .sliding-images {
   display: flex;
   overflow: hidden;
@@ -91,6 +90,9 @@
   .icons-pics{
     display: flex;
     flex-direction: column;
+  }
+  .footer-copy{
+    margin-top: 10rem;
   }
 }
 
