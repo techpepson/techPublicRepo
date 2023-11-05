@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.html",
     "./menPage.html",
+    "./womenPage.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {

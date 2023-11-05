@@ -14,7 +14,7 @@
             class="navs flex justify-between place-items-center max-lg:hidden"
           >
             <li class="home-button">
-              <a href="#" class="Home-link">Home</a>
+              <a href="index.html" class="Home-link">Home</a>
             </li>
             <li class="about-button">
               <a href="#" class="About-link">About</a>
@@ -31,7 +31,7 @@
                 Your professional tailors
               </p>
             </div>
-            <a href="#" class="ladies-link">
+            <a href="womenPage.html" class="ladies-link">
               <li class="ladies-button">Ladies</li>
             </a>
             <a href="#" class="children-link">
@@ -86,7 +86,7 @@
           <ul
             class="mobile__navs flex items-center justify-center place-items-center flex-col gap-10 min-[360px]:hidden w-full h-full bg-[#e0f2fe] absolute rounded-2xl"
           >
-            <a href="#" class="mobile__Home-link">
+            <a href="index.html" class="mobile__Home-link">
               <li class="mobile__home-button">Home</li>
             </a>
             <a href="#" class="mobile__about-link">
@@ -103,7 +103,7 @@
                 Your professional tailors
               </p>
             </div>
-            <a href="#" class="mobile__ladies-link">
+            <a href="womenPage.html" class="mobile__ladies-link">
               <li class="mobile__ladies-button">Ladies</li>
             </a>
             <a href="#" class="mobile__children-link">
@@ -222,7 +222,7 @@
           <div
             class="intro-message-container relative left-24 mt-5 text-blue-900 italic"
           >
-            <p class="intro-message text-3xl">
+            <p class="intro-message text-3xl max-[360px]:max-w-[30ch] max-[360px]:text-3xl">
               <!--This is an intro of our works-->
               Find from the large collection of male fashion at Ankin Apparel.
               Take some time to go through some of what <br />
@@ -242,8 +242,8 @@
             <p class="agbada-description caption">
               We deal in modern and recent styles of Agbada that will fit you
               for any occasion, anytime, anywhere.
-            </p>
-            <figure class="kaftan-style">
+            </p>~
+            <figure class="kaftan-style figure-object">
               <figcaption class="kaftan-caption">Kaftan Style</figcaption>
               <img
                 class="kaftan-img images"
@@ -255,7 +255,7 @@
               We deal in modern and recent styles of Kaftan that will fit you
               for any occasion, anytime, anywhere.
             </p>
-            <figure class="political-style" id="modified">
+            <figure class="political-style figure-object" id="modified">
               <figcaption class="political-caption">Political Suit</figcaption>
               <img
                 class="political-img images"
@@ -267,7 +267,7 @@
               We deal in modern and recent styles of Political Suits that will
               fit you for any occasion, anytime, anywhere.
             </p>
-            <figure class="kimono-style">
+            <figure class="kimono-style figure-object">
               <figcaption class="kimono-caption">Kimono Style</figcaption>
               <img
                 class="kimono-img images"
@@ -279,7 +279,7 @@
               We deal in modern and recent styles of Kimono that will fit you
               for any occasion, anytime, anywhere.
             </p>
-            <figure class="shirt-style">
+            <figure class="shirt-style figure-object">
               <figcaption class="shirt-caption">Shirt</figcaption>
               <img
                 class="shirt-img images"
@@ -291,7 +291,7 @@
               We deal in modern and recent styles of Shirts that will fit you
               for any occasion, anytime, anywhere.
             </p>
-            <figure class="v-neck-style">
+            <figure class="v-neck-style figure-object">
               <figcaption class="v-neck-caption">V-neck</figcaption>
               <img
                 class="v-neck-img images"
@@ -307,17 +307,19 @@
           </div>
 
           <div class="concluding-container ml-7rem">
-            <p class="concluding-message ml-[7rem] mt-[3rem]">
+            <p class="concluding-message ml-[7rem] mt-[3rem] text-xl">
               We also take orders for any styles of your choice and get it
               delivered to the comfort of your home. Just give us a call.
+              Didn't see an image of your favourites, give us a call or messgae and we will
+              get it done for you.
             </p>
           </div>
           <!--This is the button to send emails using mailto-->
-          <div class="message-button ml-[50%] mt-[3rem]">
-            <p class="email">Click the button below to send us an email.</p>
+          <div class="message-button ml-[50%] mt-[3rem] animate-move-right">
+              <p class="email email-text bg-gradient-to-t from-blue-300 to-green-50 rounded-lg"><span class="connect">Connect with us</span></p>
             <a href="mailto:peprahdickson187@gmail.com">
               <button
-                class="email ml-[7rem] mt-[1rem] bg-red-300"
+                class="email-message ml-[7rem] mt-[1rem] bg-gradient-to-t from-blue-300 to-green-50 text-slate-700 rounded-xl font-bold"
                 title="Click to send email"
               >
                 Send email
@@ -340,7 +342,7 @@
               <a
                 href="mailto:peprahdickson187@gmail.com"
                 title="click to send email"
-                ><span class="email bg-red-300">Click to send email</span></a
+                ><div class="animate-move-right"><span class="email bg-red-300 bg-gradient-to-t from-blue-300 to-green-50 text-slate-700 rounded-xl font-bold text-xl">Click to send email</span></div></a
               >
               <p class="phone-number">Phone Number: 0551875432</p>
             </details>
@@ -399,6 +401,7 @@
         </div>
       </footer>
     </div>
+    <p class="footer-copy flex justify-center"></p>
     <script type="module" src="./components/mainMen.js"></script>
   </body>
 </html>

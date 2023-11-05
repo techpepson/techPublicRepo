@@ -2,85 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .sliding-images {
   display: flex;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .sliding-image {
-  animation: sliding ease-in-out 40s infinite;
-}
-.grid-of-styles-container{
-    margin-top: 3rem;
-    margin-left: 7rem;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 1fr));
-    grid-template-areas: 
-    "image1 text1"
-    "text2 image2"
-    "image3 text3"
-    "text4 image4"
-    "image5 text5"
-    "text6 image6";
-}
-
-.agbada-style{
-    grid-area: image1;
-}
-
-.agbada-description{
-    grid-area: text1;
-    max-width: 30ch;
-}
-
-.kaftan-style{
-    grid-area: image2;
-}
-
-.kaftan-description{
-    grid-area: text2;
-    max-width: 30ch;
-}
-
-.political-style{
-    grid-area: image3;
-}
-
-.political-description{
-    grid-area: text3;
-    max-width: 30ch;
-}
-
-.kimono-style{
-    grid-area: image4;
-}
-
-.kimono-description{
-    grid-area: text4;
-    max-width: 30ch;
-}
-
-.shirt-style{
-    grid-area: image5;
-}
-
-.shirt-description{
-    grid-area: text5;
-    max-width: 30ch;
-}
-
-.v-neck-style{
-    grid-area: image6;
-}
-
-.v-neck-description {
-    grid-area: text6;
-    max-width: 30ch;
-}
-
-.caption{
-    position: relative;
-    top: 50%;
+  animation: sliding ease-in-out 20s infinite;
 }
 
 /*This is the sliding images section*/
@@ -114,5 +44,149 @@
   }
   100% {
     transform: translateX(-400%);
+  }
+}
+
+@media (max-width: 700px){
+  .images{
+    border-radius: 5%;
+    width: 400px;
+  }
+  .grid-of-styles-container{
+    margin-inline-start: 100px;
+  }
+  .caption{
+    max-width: 50ch;
+    font-size: 18px;
+  }
+  .intro-message{
+    font-size: 18px;
+    max-width: max-content
+  }
+  .grid-of-styles-container{
+    margin-top: 1rem;
+  }
+  .figure-object{
+    padding-top: 2rem;
+  }
+  .concluding-message{
+    font-size: 16px;
+    display: flex;
+    position: relative;
+    place-items: center;
+  }
+  .message-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .email-text{
+    max-width: max-content;
+    font-size: 18px;
+  }
+  .email-message{
+    margin-left: 10%;
+    font-size: 20px;
+  }
+  .icons-pics{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px){
+  .grid-of-styles-container{
+      margin-top: 2rem;
+      margin-inline-start: 7rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      grid-template-areas: 
+      "image1 text1"
+      "text2 image2"
+      "image3 text3"
+      "text4 image4"
+      "image5 text5"
+      "text6 image6";
+  }
+  
+  .agbada-style{
+      grid-area: image1;
+  }
+  
+  .agbada-description{
+      grid-area: text1;
+      max-width: max-content;
+  }
+  
+  .kaftan-style{
+      grid-area: image2;
+  }
+  
+  .kaftan-description{
+      grid-area: text2;
+      max-width: max-content;
+  }
+  
+  .political-style{
+      grid-area: image3;
+  }
+  
+  .political-description{
+      grid-area: text3;
+      max-width: max-content;
+  }
+  
+  .kimono-style{
+      grid-area: image4;
+  }
+  
+  .kimono-description{
+      grid-area: text4;
+      max-width: max-content;
+  }
+  
+  .shirt-style{
+      grid-area: image5;
+  }
+  
+  .shirt-description{
+      grid-area: text5;
+      max-width: max-content;
+  }
+  
+  .v-neck-style{
+      grid-area: image6;
+  }
+  
+  .v-neck-description {
+      grid-area: text6;
+      max-width: max-content;
+  }
+  
+  .caption{
+      position: relative;
+      top: 50%;
+  }
+  .intro-message{
+    font-size: 20px;
+  }
+  .message-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .email-text{
+    max-width: max-content;
+    font-size: 30px;
+  }
+  .email-message{
+    margin-left: 13%;
+    font-size: 25px;
+  }
+}
+
+@media(max-width: 1274px){
+  .icons-pics{
+    gap: 2.5rem;
   }
 }

@@ -16,10 +16,13 @@ li:hover{
     flex: 0 0 100%;
     height: 70rem;
 }
-.caption{
-    font-size: 25px;
-}
-.images{
-    width: 320px;
-    border-radius: 10%;
+
+@media (min-width: 700px){
+    .images{
+        width: 320px;
+        border-radius: 10%;
+    }
+    .caption{
+        font-size: 25px;
+    }
 }

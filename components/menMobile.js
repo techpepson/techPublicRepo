@@ -5,7 +5,10 @@ function menMobile() {
     const mobileNavs = document.querySelector(".mobile__navs");
     const mobileNavsContainer = document.querySelector('.mobile-nav__container');
     const slider = document.querySelector(".sliding-images");
-    const chevronButton = document.querySelector(".chevron-button-container")
+    const chevronButton = document.querySelector(".chevron-button-container");
+    const introMessageDisplay = document.querySelector(".intro-message");
+    const imageCaptionDisplay = document.querySelector(".caption");
+    const kaftanCaptionDisplay = document.querySelector(".kaftan-description");
 
     //State for the mobile nav
     let isNavOpen = false;
@@ -16,6 +19,9 @@ function menMobile() {
             document.body.style.overflow = 'hidden';
             slider.style.display = "none";
             chevronButton.style.display = "none";
+            introMessageDisplay.style.display = "none";
+            imageCaptionDisplay.style.display = "none";
+            kaftanCaptionDisplay.style.display = "none";
         }
         else {
             if (!isNavOpen) {
