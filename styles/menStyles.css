@@ -12,9 +12,8 @@
   animation: sliding ease-in-out 20s infinite;
 }
 
-.images:hover{
-    animation: beep 1.5s;
-    cursor: pointer;
+.lazyLoad {
+  animation: lazyImage 1.5s ease-in-out;
 }
 
 /*This is the sliding images section*/
@@ -51,78 +50,87 @@
   }
 }
 
-@keyframes beep{
-  0%{
+@keyframes beep {
+  0% {
     transform: rotate(0deg);
   }
-  50%{
+  50% {
     transform: rotate(4deg);
   }
-  60%{
+  60% {
     transform: rotate(4deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
 
-@media (max-width: 700px){
-  .images{
+@keyframes lazyImage {
+  0% {
+    transform: translateX(-100%) rotateY(60deg);
+  }
+  100% {
+    transform: translateX(0%) rotateY(0deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .images {
     border-radius: 5%;
     width: 400px;
   }
-  .grid-of-styles-container{
+  .grid-of-styles-container {
     margin-inline-start: 100px;
   }
-  .caption{
+  .caption {
     max-width: 50ch;
     font-size: 18px;
   }
-  .intro-message{
+  .intro-message {
     font-size: 18px;
-    max-width: max-content
+    max-width: max-content;
   }
-  .grid-of-styles-container{
+  .grid-of-styles-container {
     margin-top: 1rem;
   }
-  .figure-object{
+  .figure-object {
     padding-top: 2rem;
   }
-  .concluding-message{
+  .concluding-message {
     font-size: 16px;
     display: flex;
     position: relative;
     place-items: center;
   }
-  .message-button{
+  .message-button {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .email-text{
+  .email-text {
     max-width: max-content;
     font-size: 18px;
   }
-  .email-message{
+  .email-message {
     margin-left: 10%;
     font-size: 20px;
   }
-  .icons-pics{
+  .icons-pics {
     display: flex;
     flex-direction: column;
   }
-  .footer-copy{
+  .footer-copy {
     margin-top: 10rem;
   }
 }
 
-@media (min-width: 700px){
-  .grid-of-styles-container{
-      margin-top: 2rem;
-      margin-inline-start: 7rem;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(auto, 1fr));
-      grid-template-areas: 
+@media (min-width: 700px) {
+  .grid-of-styles-container {
+    margin-top: 2rem;
+    margin-inline-start: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-areas:
       "image1 text1"
       "text2 image2"
       "image3 text3"
@@ -130,85 +138,85 @@
       "image5 text5"
       "text6 image6";
   }
-  
-  .agbada-style{
-      grid-area: image1;
+
+  .agbada-style {
+    grid-area: image1;
   }
-  
-  .agbada-description{
-      grid-area: text1;
-      max-width: max-content;
+
+  .agbada-description {
+    grid-area: text1;
+    max-width: max-content;
   }
-  
-  .kaftan-style{
-      grid-area: image2;
+
+  .kaftan-style {
+    grid-area: image2;
   }
-  
-  .kaftan-description{
-      grid-area: text2;
-      max-width: max-content;
+
+  .kaftan-description {
+    grid-area: text2;
+    max-width: max-content;
   }
-  
-  .political-style{
-      grid-area: image3;
+
+  .political-style {
+    grid-area: image3;
   }
-  
-  .political-description{
-      grid-area: text3;
-      max-width: max-content;
+
+  .political-description {
+    grid-area: text3;
+    max-width: max-content;
   }
-  
-  .kimono-style{
-      grid-area: image4;
+
+  .kimono-style {
+    grid-area: image4;
   }
-  
-  .kimono-description{
-      grid-area: text4;
-      max-width: max-content;
+
+  .kimono-description {
+    grid-area: text4;
+    max-width: max-content;
   }
-  
-  .shirt-style{
-      grid-area: image5;
+
+  .shirt-style {
+    grid-area: image5;
   }
-  
-  .shirt-description{
-      grid-area: text5;
-      max-width: max-content;
+
+  .shirt-description {
+    grid-area: text5;
+    max-width: max-content;
   }
-  
-  .v-neck-style{
-      grid-area: image6;
+
+  .v-neck-style {
+    grid-area: image6;
   }
-  
+
   .v-neck-description {
-      grid-area: text6;
-      max-width: max-content;
+    grid-area: text6;
+    max-width: max-content;
   }
-  
-  .caption{
-      position: relative;
-      top: 50%;
+
+  .caption {
+    position: relative;
+    top: 50%;
   }
-  .intro-message{
+  .intro-message {
     font-size: 20px;
   }
-  .message-button{
+  .message-button {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .email-text{
+  .email-text {
     max-width: max-content;
     font-size: 30px;
   }
-  .email-message{
+  .email-message {
     margin-left: 13%;
     font-size: 25px;
   }
 }
 
-@media(max-width: 1274px){
-  .icons-pics{
+@media (max-width: 1274px) {
+  .icons-pics {
     gap: 2.5rem;
   }
 }
