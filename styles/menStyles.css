@@ -12,6 +12,11 @@
   animation: sliding ease-in-out 20s infinite;
 }
 
+.images:hover{
+    animation: beep 1.5s;
+    cursor: pointer;
+}
+
 /*This is the sliding images section*/
 @keyframes sliding {
   0% {
@@ -43,6 +48,21 @@
   }
   100% {
     transform: translateX(-400%);
+  }
+}
+
+@keyframes beep{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(4deg);
+  }
+  60%{
+    transform: rotate(4deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }
 
