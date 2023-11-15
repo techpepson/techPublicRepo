@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!--This is the header section that contains the navs for large screens-->
-        <header class="women-header-section">
-            <ul>
-                <li>
-                    <a href="#" class="home-link" title="click to go to the home page">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="about-link" title="click to go to the about page">About</a>
-                </li>
-                <li>
-                    <a href="#" class="men-link" title="click to go to the Men page">Men</a>
-                </li>
-                <li>
-                    <a href="#" class="contact-link" title="click to go to the Contact page">Contact</a>
-                </li>
-                <!--Moon icon for toggling light and dark mode-->
-                <li class="sun-icon">
-                    <button class="sun-icon w-4 h-4 block" title="Click to toggle dark and light mode">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
-                          </svg>
-                    
-                    </button>
-                </li>
-            </ul>
-            <!--End of header section-->
-        </header>
+      <!--This is the header section that contains the navs for large screens-->
+      <header class="women-header-section">
+        <ul class="nav-ul flex justify-around place-items-center">
+          <li>
+            <a href="#" class="home-link" title="click to go to the home page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="about-link" title="click to go to the about page"
+              >About</a
+            >
+          </li>
+          <li>
+            <div
+              class="company-details flex flex-col align-middle place-items-center"
+            >
+              <p class="company-name text-5xl">ANKIN APPAREL</p>
+              <p class="company-motto text-2xl">Your Professional Taylors</p>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="men-link" title="click to go to the Men page"
+              >Men</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="contact-link"
+              title="click to go to the Contact page"
+              >Contact</a
+            >
+          </li>
+          <li class="line-separator">
+            <p class="bg-slate-600 h-10 w-[1.9px]"></p>
+          </li>
+          <!--Moon icon for toggling light and dark mode-->
+          <li class="sun-icon">
+            <button
+              class="sun-icon w-4 h-4 block"
+              title="Click to toggle dark and light mode"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <!--End of header section-->
+      </header>
     </div>
     <script type="module" src="./components/mainWomen.js"></script>
-</body>
+  </body>
 </html>

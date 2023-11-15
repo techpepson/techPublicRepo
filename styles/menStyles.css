@@ -8,6 +8,11 @@
   border-radius: 10px;
 }
 
+.images:hover{
+  animation: beep 1s ease-in-out;
+  opacity: 0.8;
+}
+
 .sliding-image {
   animation: sliding ease-in-out 20s infinite;
 }
@@ -55,10 +60,10 @@
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(4deg);
+    transform: rotate(1deg);
   }
   60% {
-    transform: rotate(4deg);
+    transform: rotate(1deg);
   }
   100% {
     transform: rotate(0deg);
