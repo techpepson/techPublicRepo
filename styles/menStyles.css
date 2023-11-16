@@ -8,6 +8,12 @@
   border-radius: 10px;
 }
 
+.company-name-button, .company-jargon,.mobile__company-name-button {
+    font-family: 'Nabla';
+    color: red;
+  }
+  
+
 .images:hover{
   animation: beep 1s ease-in-out;
   opacity: 0.8;
